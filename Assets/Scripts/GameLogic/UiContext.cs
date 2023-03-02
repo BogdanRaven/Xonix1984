@@ -33,6 +33,7 @@ public class UiContext : MonoBehaviour
 
     public void SetButtonPauseListener(UnityAction unityAction)
     {
+        _pauseButton.onClick.RemoveAllListeners();
         _pauseButton.onClick.AddListener(unityAction);
     }
 
